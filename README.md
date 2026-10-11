@@ -1,6 +1,6 @@
 ## Flask on Docker
 
-[![Development Build](https://github.com/lucaciaramitaro34/flask-on-docker/actions/workflows/build.yml/badge.svg)](https://github.com/lucaciaramitaro34/flask-on-docker/actions/workflows/build.yml)
+[![Development Build](https://github.com/lucaciaramitaro34/flask-on-docker/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/lucaciaramitaro34/flask-on-docker/actions/workflows/build.yml)
 
 ## Overview
 
@@ -19,6 +19,7 @@ The following demonstration shows the application running, uploading an image, a
 1. Clone the repository:
 
 git clone https://github.com/lucaciaramitaro34/flask-on-docker.git
+
 cd flask-on-docker
 
 2. Build and start services:
@@ -57,12 +58,14 @@ docker compose down -v
 Use the following commands to copy the example files, replacing the placeholders with local credentials.
 
 cp .env.prod.example .env.prod
+
 cp .env.prod.db.example .env.prod.db 
 
 
 2. After this, build and start containers with:
 
 docker compose -f docker-compose.prod.yml up -d --build
+
 docker compose -f docker-compose.prod.yml exec web python manage.py create_db
 
 3. Access the application using the same commands as above:
