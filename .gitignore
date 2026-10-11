@@ -1,7 +1,6 @@
-# Production and development environment files
+# Production environment files
 .env.prod.db
 .env.prod
-.env.dev
 # Python virtual environments
 env/
 venv/
